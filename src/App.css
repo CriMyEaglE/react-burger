@@ -14,12 +14,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #131316;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -32,7 +32,112 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.w-hug {
+  width: 178px;
+}
+
+.h-hug {
+  height: 56px;
+}
+
+.w-fill {
+  width: 272px;
+}
+
+.h-fill {
+  height: 48px;
+}
+
+.header {
+  max-width: 1920px;
+  width: 100%;
+  background-color: #1C1C21;
+  display: flex;
+  justify-content: center;
+}
+
+.header-navigation {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns {
+  display: flex;
+}
+
+.header-btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+}
+
+.main {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-ingredients {
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.burger-ingredients-card {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.modal.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 40px;
+  background-color: #1C1C21;
+  width: 720px;
+  height: 718px;
+  transform: scale(0.5);
+  transition: 0.4s;
+}
+
+.modal-content.active {
+  transform: scale(1);
 }
