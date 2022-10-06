@@ -1,10 +1,8 @@
-import React, { Component, useState } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-import { Tab, Logo, Input, BurgerIcon, CloseIcon, CheckMarkIcon, CurrencyIcon, DragIcon, EditIcon, HideIcon, InfoIcon, ListIcon, LockIcon, LogoutIcon, ProfileIcon, ShowIcon, DeleteIcon, ArrowUpIcon, ArrowDownIcon, MenuIcon, ConstructorElement, Button } from '@ya.praktikum/react-developer-burger-ui-components';
-// import { BunComponents, MainComponents, SauceComponents, Modal } from './components/api';
-import { Modal } from './components/api';
-import Ingredients from './components/newApi';
+import { Tab, Logo, BurgerIcon, CloseIcon, CurrencyIcon, DragIcon, ListIcon, ProfileIcon, ConstructorElement, Button } from '@ya.praktikum/react-developer-burger-ui-components';
+import { Modal } from './components/modal';
+import Ingredients from './components/api';
 import done from './image/done.png';
 
 function App() {
