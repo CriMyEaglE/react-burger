@@ -80,11 +80,18 @@
   border: none;
   color: white;
   padding: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header-btn:hover {
+  opacity: 0.5;
 }
 
 .logo {
   position: absolute;
   top: 20px;
+  cursor: pointer;
 }
 
 .main {
@@ -94,10 +101,19 @@
   justify-content: space-between;
 }
 
+.scroll-block {
+  height: 480px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .burger-ingredients {
+  height: 716px;
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .burger-ingredients-card {
@@ -129,15 +145,37 @@
 }
 
 .modal-content {
+  position: relative;
   padding: 20px;
   border-radius: 40px;
   background-color: #1C1C21;
   width: 720px;
-  height: 718px;
   transform: scale(0.5);
   transition: 0.4s;
 }
 
 .modal-content.active {
   transform: scale(1);
+}
+
+.nutrients {
+  display: flex;
+  justify-content: center;
+}
+
+.nutrients-item {
+  text-align: center;
+}
+
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 15px
+}
+
+.order-done {
+  background-image: url(./image/done.png);
+  width: 120px;
+  height: 120px;
 }
